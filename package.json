@@ -1,10 +1,10 @@
 {
-  "name": "project-intersection",
+  "name": "malcolmjs",
   "version": "1.0.0",
   "description": "Because you don't want to be left streets behind",
   "repository": {
     "type": "git",
-    "url": "https://github.com/streets-ahead/project-intersection.git"
+    "url": "https://github.com/streets-ahead/malcolm.git"
   },
   "scripts": {
     "create": "node ./create.js",
@@ -60,11 +60,8 @@
     "lodash": "^4.2.0",
     "marked": "^0.3.5",
     "normalize.css": "^3.0.3",
-    "pretty-date": "^0.2.0",
     "react": "^15.0.0-rc.1",
-    "react-css-modules": "^3.7.4",
     "react-dom": "^15.0.0-rc.1",
-    "react-motion": "^0.4.2",
     "react-router": "^2.0.0-rc5"
   }
 }
