@@ -1,0 +1,62 @@
+.container-width {
+  max-width: 760px;
+}
+
+.first-post {
+  padding-bottom: 60px;
+}
+
+.first-post p {
+  margin: 10px 0;
+}
+
+.first-post h1 {
+  margin: 0px;
+}
+
+.navBar {
+  /*border-bottom: 1px solid #ddd;*/
+  composes: container-width;
+  text-align: center;
+  margin: 0px auto;
+  padding: 32px 0;
+  & p {
+    margin-top: 0;
+  }
+}
+
+.navBar h1 {
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 4px;
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #2F3440;
+}
+
+.light {
+  color: #bbb;
+}
+
+.separator, .light {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.container {
+  composes: container-width;
+  margin: 0px auto;
+  padding: 0px 0 32px 0;
+}
+
+@media screen and (max-width:760px) { 
+  
+  .separator {
+    display: none;
+  }
+  .light {
+    display: block;
+    margin-top: 10px;
+  }
+}
