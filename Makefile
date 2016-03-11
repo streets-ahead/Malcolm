@@ -1,4 +1,6 @@
 
+BIN = ./node_modules/.bin
+
 i:
 	rm -rf node_modules
 	npm install
@@ -14,10 +16,13 @@ gen: clean
 serve:
 	NODE_ENV=development node index.js
 	
+lint: 
+	@$(BIN)/eslint --ext .jsx,.es --ignore-path node_modules .
+	
 create: 
 	node create.js
 
 clean:
 	-rm -rf dist
 
-.PHONY: i install clean gen serve create
+.PHONY: i install clean gen serve create lint

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import api from './api';
 import merge from 'lodash/merge';
-import {Link} from 'react-router';
 import Footer from './Footer';
 
 import style from '../styles/home.css';
@@ -63,6 +62,6 @@ export default class Root extends Component {
         {childrenWithProps}
         <Footer index={index} />
       </div>
-    )
+    );
   }
 }

@@ -1,7 +1,5 @@
 import React from 'react';
 import dateFormat from 'dateformat';
-import {Link} from 'react-router';
-import range from 'lodash/range';
 
 import styles from '../../styles/post.css';
 
@@ -27,5 +25,5 @@ export default function({content}) {
         <div className={styles['post-body']} dangerouslySetInnerHTML={{__html: body}} /> 
       </div>
     </div>
-  )
-};
+  );
+}

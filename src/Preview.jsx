@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
 import dateFormat from 'dateformat';
-import classNames from 'classnames';
 
 import previewStyle from '../styles/preview.css';
 

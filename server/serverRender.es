@@ -1,20 +1,19 @@
 import fs from 'fs';
 import path from 'path';
 import ReactDOMServer from 'react-dom/server';
-import {match, RouterContext} from 'react-router'
+import {match, RouterContext} from 'react-router';
 import React from 'react';
-import routeConfig from '../src/routeConfig';
 import cheerio from 'cheerio';
-import api from '../src/api';
 import reqReload from 'require-reload';
-import url from 'url';
 
 const reload = reqReload(require);
 
 const INDEX_HTML = fs.readFileSync(path.join(__dirname, '../index.html'));
 
 export default (req, res, next) => { 
-  let routeConfig, api;
+  let routeConfig = require('../src/routeConfig'), 
+      api = require('../src/api');
+      
   try {
     reload.emptyCache();
     routeConfig = reload('../src/routeConfig').default;

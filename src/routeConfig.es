@@ -24,7 +24,7 @@ function componentForType(defaultTemplate) {
   return (props) => {
     const Template = templates[props.content.template || defaultTemplate];
     return <Template {...props} />;
-  }
+  };
 }
 
 const track = (nextState) => {

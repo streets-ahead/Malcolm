@@ -55,7 +55,7 @@ export default function() {
     let wsId = id++;
     sessions[wsId] = ws;
     ws.on('close', () => {
-      delete sessions[wsId]
+      delete sessions[wsId];
     });
   });
-};
+}

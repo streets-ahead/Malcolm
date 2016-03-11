@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Preview from '../Preview';
 
 import style from '../../styles/home.css';
@@ -20,5 +20,5 @@ export default function Home({appState: {index}}) {
         </div>
       </div>
     </div>
-  )
-};
+  );
+}

@@ -10,4 +10,4 @@ export default {
     const {data} = await axios.get((prefix || "") + "/" + path + '.json');
     return data;
   }
-}
+};

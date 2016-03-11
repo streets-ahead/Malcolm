@@ -88,7 +88,7 @@ export default function(sessions) {
           .filter(p => new Date(p.published).getTime() - new Date().getTime() < 0)
           .map(p => omit(p, ['body']))
           .sort((a, b) => {
-            return (b.published ? new Date(b.published).getTime() : 0) - (a.published ? new Date(a.published).getTime() : 0)
+            return (b.published ? new Date(b.published).getTime() : 0) - (a.published ? new Date(a.published).getTime() : 0);
           });
       });
       return ind;
@@ -99,4 +99,4 @@ export default function(sessions) {
       return {...content, body: marked(content.body)};
     }
   };
-};
+}
