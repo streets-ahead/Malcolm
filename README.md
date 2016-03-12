@@ -1,8 +1,11 @@
 # Malcolm - A React Static Site Template
 
+![Ian Malcolm](images.jpeg)
+
 Basic idea is that a static site generator could just be a cache of a very simple isomorphic (universal) app.
 
 Different content types can be configured as react-router routes.  The following example defines two content types, pages and posts.
+
 
 ```
 const routes = [{ 
