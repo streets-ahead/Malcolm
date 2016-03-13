@@ -47,6 +47,7 @@
     "require-reload": "^0.2.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.2",
+    "webpack-dev-middleware": "^1.5.1",
     "webpack-dev-server": "^1.12.1",
     "webpack-hot-middleware": "^2.6.4",
     "ws": "^1.0.1",
